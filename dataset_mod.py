@@ -10,11 +10,13 @@ signal_quality2 = []
 turbulence2 = []
 transit_time2 = []
 gain1 = []
+gainA = []
 
 for i in range(8):
     flow_velocity1.append("Flow Velocity" + str(i + 1))
     speed_sound1.append("Speed of Sound" + str(i + 1))
     gain1.append("Gain" + str(i + 1))
+    gainA.append("GainA" + str(i + 1))
     signal_strength2.append("Signal Strength" + str(i + 1))
     signal_quality2.append("Signal Quality" + str(i + 1))
     transit_time2.append("Transit time" + str(i + 1))
@@ -37,6 +39,7 @@ df1 = pd.read_csv(
         *speed_sound1,
         "Average speed of sound",
         *gain1,
+        *gainA,
         "Class Attruibute",
     ],
 )
