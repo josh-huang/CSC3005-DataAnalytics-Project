@@ -2,6 +2,8 @@ from numpy import sign
 import pandas as pd
 
 # file to load data and add header 
+
+# initiate empty array to store feature name
 flow_velocity1 = []
 flow_velocity2 = []
 speed_sound1 = []
@@ -13,6 +15,7 @@ transit_time2 = []
 gain1 = []
 gainA = []
 
+# store feature name in the array
 for i in range(8):
     flow_velocity1.append("Flow Velocity" + str(i + 1))
     speed_sound1.append("Speed of Sound" + str(i + 1))
